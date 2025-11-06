@@ -1,0 +1,8 @@
+# First login as admin
+curl -X POST http://localhost:3000/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","password":"admin123"}'
+
+# Then use the admin token
+curl http://localhost:3000/admin \
+  -H "Authorization: Bearer ADMIN_TOKEN"

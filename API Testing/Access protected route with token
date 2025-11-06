@@ -1,0 +1,3 @@
+# Replace YOUR_TOKEN with the actual token from login response
+curl http://localhost:3000/protected \
+  -H "Authorization: Bearer YOUR_TOKEN"
